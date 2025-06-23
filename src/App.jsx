@@ -1,12 +1,15 @@
-import "./App.css";
+import "/css/app.css?url";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <>
-      <div className="text-center mt-10">
-        <h1 className=" text-2xl ">Hello React + Tailwind !</h1>
-        <p>Tes</p>
-      </div>
+      <Router>
+        <Routes>
+          <Route exac path="/" element={<HomePage />} />
+        </Routes>
+      </Router>
     </>
   );
 }
