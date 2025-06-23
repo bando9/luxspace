@@ -3,7 +3,10 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1 className="text-center text-2xl mt-10">Hello React + Tailwind !</h1>
+      <div className="text-center mt-10">
+        <h1 className=" text-2xl ">Hello React + Tailwind !</h1>
+        <p>Tes</p>
+      </div>
     </>
   );
 }
