@@ -1,10 +1,5 @@
 import { black as _black, white as _white } from "tailwindcss/colors";
 
-export const purge = {
-  // enabled: true,
-  content: ["./**/*.html", "./**/*.js"],
-};
-export const presets = [];
 export const darkMode = false;
 export const theme = {
   screens: {
