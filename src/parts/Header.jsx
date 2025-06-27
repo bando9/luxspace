@@ -1,14 +1,19 @@
 import { Link } from "react-router";
 
-export default function Header() {
+export default function Header({ theme, position }) {
   return (
     <div>
-      <header className="absolute w-full z-50 px-4">
+      <header
+        className={[
+          position === "absolute" ? "absolute w-full z-50" : "",
+          "px-4",
+        ].join(" ")}
+      >
         <div className="container mx-auto py-5">
           <div className="flex flex-stretch items-center">
             <div className="w-56 items-center flex">
               <img
-                src="images/content/logo.png"
+                src="/images/content/logo.png"
                 alt="Luxspace | Fulfill your house with beautiful furniture"
               />
             </div>
@@ -21,7 +26,12 @@ export default function Header() {
                 <li className="mx-3 py-6 md:py-0">
                   <Link
                     to="/showcase"
-                    className="text-black md:text-white hover:underline"
+                    className={[
+                      "hover:underline",
+                      theme === "white"
+                        ? "text-black md:text-white"
+                        : "text-white md:text-black",
+                    ].join(" ")}
                   >
                     Showcase
                   </Link>
@@ -29,7 +39,12 @@ export default function Header() {
                 <li className="mx-3 py-6 md:py-0">
                   <Link
                     to="/catalog"
-                    className="text-black md:text-white hover:underline"
+                    className={[
+                      "hover:underline",
+                      theme === "white"
+                        ? "text-black md:text-white"
+                        : "text-white md:text-black",
+                    ].join(" ")}
                   >
                     Catalog
                   </Link>
@@ -37,7 +52,12 @@ export default function Header() {
                 <li className="mx-3 py-6 md:py-0">
                   <Link
                     to="/delivery"
-                    className="text-black md:text-white hover:underline"
+                    className={[
+                      "hover:underline",
+                      theme === "white"
+                        ? "text-black md:text-white"
+                        : "text-white md:text-black",
+                    ].join(" ")}
                   >
                     Delivery
                   </Link>
@@ -45,7 +65,12 @@ export default function Header() {
                 <li className="mx-3 py-6 md:py-0">
                   <Link
                     to="/rewards"
-                    className="text-black md:text-white hover:underline"
+                    className={[
+                      "hover:underline",
+                      theme === "white"
+                        ? "text-black md:text-white"
+                        : "text-white md:text-black",
+                    ].join(" ")}
                   >
                     Rewards
                   </Link>
@@ -73,7 +98,12 @@ export default function Header() {
                 </li>
                 <li className="ml-6">
                   <Link
-                    className="flex items-center justify-center w-8 h-8 text-black md:text-white"
+                    className={[
+                      "flex items-center justify-center w-8 h-8 ",
+                      theme == "white"
+                        ? "text-black md:text-white"
+                        : "text-white md:text-black",
+                    ]}
                     to="/cart"
                   >
                     <svg

@@ -13,7 +13,7 @@ export default function HomePage() {
   }, []);
   return (
     <div>
-      <Header />
+      <Header theme="white" position="absolute" />
       <Hero />
       <BrowseRoom />
       <JustArrived />
