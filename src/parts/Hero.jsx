@@ -35,9 +35,9 @@ export default function Hero() {
                   width="100%"
                   height="100%"
                   src="https://www.youtube.com/embed/3h0_v1cdUIA"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
               </div>
             </div>'

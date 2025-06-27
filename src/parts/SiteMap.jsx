@@ -87,7 +87,7 @@ export default function SiteMap() {
                       className="bg-gray-100 rounded-xl py-3 px-5 w-full focus:outline-none"
                       placeholder="Your email adress"
                     />
-                    <button className="bg-pink-400 absolute rounded-xl right-0 p-3">
+                    <button className="bg-pink-400 absolute rounded-xl right-0 p-3 cursor-pointer">
                       <svg
                         width="24"
                         height="24"
