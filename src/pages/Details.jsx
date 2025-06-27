@@ -5,6 +5,7 @@ import SiteMap from "../parts/SiteMap";
 import Footer from "../parts/Footer";
 import Breadcrumb from "../parts/Breadcrumb";
 import ProductDetails from "../parts/Details/ProductDetails";
+import Suggestion from "../parts/Details/Suggestion";
 
 export default function Details() {
   return (
@@ -18,6 +19,7 @@ export default function Details() {
         ]}
       />
       <ProductDetails />
+      <Suggestion />
       <Clients />
       <SiteMap />
       <Footer />
