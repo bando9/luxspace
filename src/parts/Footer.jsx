@@ -1,14 +1,13 @@
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
-    <div>
-      <footer class="flex text-center px-4 py-8 justify-center">
-        <p class="text-sm hover:underline">
-          Copyright {year}
-          <span className="animate-ping text-sky-400 opacity-75">•</span> All
-          Rights Reserved LuxSpace by BuildWith Angga
-        </p>
-      </footer>
-    </div>
+    <footer class="flex text-center px-4 py-8 justify-center">
+      <p className="text-sm hover:underline">
+        Learning project based on BuildWith Angga (2021). Fully migrated and
+        updated by Bando Mega to latest stack {year}.
+        <br />
+        All rights reserved © LuxSpace by BuildWith Angga.
+      </p>
+    </footer>
   );
 }
